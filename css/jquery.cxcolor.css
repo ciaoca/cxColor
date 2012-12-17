@@ -1,0 +1,11 @@
+/* 颜色输入框
+------------------------------ */
+.input_cxcolor{width:18px;height:18px;padding:0;border:none;background:#000 url(../img/cxcolor.png) no-repeat;font-size:0;line-height:0;vertical-align:middle;cursor:pointer;}
+
+/* 颜色选择器
+------------------------------ */
+.cxcolor{display:none;position:absolute;z-index:1001;}
+.cxcolor .title{width:220px;padding:0 5px;border:1px solid #000;border-bottom:none;background:#fff;color:#999;font:normal 12px/20px "\5B8B\4F53";cursor:pointer;}
+.cxcolor .title:hover{color:#333;}
+.cxcolor table{border-collapse:collapse;table-layout:fixed;empty-cells:show;}
+.cxcolor td{position:static;width:10px;height:10px;padding:0;border:1px solid #000;font-size:0;line-height:0;cursor:pointer;}
