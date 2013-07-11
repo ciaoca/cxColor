@@ -14,13 +14,11 @@ cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的�
 ##【options 参数说明】
 
 <table>
-    <thead>
-        <tr>
-            <th width="80">名称</th>
-            <th width="80">默认值</th>
-            <th>说明</th>
-        </tr>
-    </thead>
+    <tr>
+        <td width="80">名称</td>
+        <td width="80">默认值</td>
+        <td>说明</th>
+    </tr>
     <tr>
         <td>color</td>
         <td>"#000000"</td>
@@ -30,13 +28,11 @@ cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的�
 
 ##【API 接口】
 
-<table class="manual_table table_form">
-    <thead>
-        <tr>
-            <th width="120">名称</th>
-            <th>说明</th>
-        <tr>
-    </thead>
+<table>
+    <tr>
+        <td width="120">名称</td>
+        <td>说明</td>
+    </tr>
     <tr>
         <td>show()</td>
         <td>显示面板</td>
