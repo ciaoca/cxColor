@@ -40,9 +40,16 @@ a:hover{color:#00f;}
 	</fieldset>
 
 	<fieldset>
-		<legend>同时改变其他元素的颜色</legend>
-		<p>标题：<input id="at_title" type="text" value="文章标题"></p>
-		<p><label for="color_d">颜色：</label><input id="color_d" type="text" class="input_cxcolor" readonly></p>
+		<legend>API 示例</legend>
+		<p>标题：<input id="title" type="text" value="文章标题"></p>
+		<p><label for="color_d">颜色：</label><input id="color_d" type="text" class="input_cxcolor" readonly value="#009900"></p>
+		<p id="acts">
+			<button type="button" value="show">显示面板</button>
+			<button type="button" value="color" data-color="#ff0000">设置为红色</button>
+			<button type="button" value="color" data-color="#0000ff">设置为蓝色</button>
+			<button type="button" value="reset">默认颜色</button>
+			<button type="button" value="clear">清除颜色</button>
+		</p>
 	</fieldset>
 
 	<h2>文档</h2>
@@ -52,24 +59,63 @@ a:hover{color:#00f;}
 	</ul>
 	
 	<h2>作者</h2>
-	<p>Copyright(c) 2012 Ciaoca, http://ciaoca.com/</p>
+	<p><a target="_blank" href="http://ciaoca.com/">http://ciaoca.com/</a></p>
+	<p>Released under the MIT license</p>
 </div>
 
 <script src="js/jquery-1.4.4.min.js"></script>
-<script src="js/jquery.cxcolor.js"></script>
+<script src="js/jquery.cxcolor.min.js"></script>
 <script>
-(function(){
-	$("#color_a").cxColor();
+$("#color_a").cxColor();
 
-	$("#color_b").cxColor({
-		color:"#0066ff"
+$("#color_b").cxColor({
+	color:"#0066ff"
+});
+
+$("#color_c").cxColor();
+	
+(function(){
+	var color=$("#color_d");
+	var title=$("#title");
+	var acts=$("#acts");
+	var mycolor;
+
+	color.bind("change",function(){
+		title.css("color",this.value)
 	});
 
-	$("#color_c").cxColor();
+	mycolor=$("#color_d").cxColor();
+	
+	acts.delegate("button","click",function(){
+		var _val=this.value;
+		var _this=$(this);
+		
+		switch (_val){
+			case "show":
+				mycolor.show();
+				break;
+			case "hide":
+				mycolor.hide();
+				break;
+			case "color":
+				mycolor.color(_this.data("color"));
+				break;
+			case "reset":
+				mycolor.reset();
+				break;
+			case "clear":
+				mycolor.clear();
+				break;
+		};
+		
+	});
 
-	$("#color_d").cxColor({
-		color:"#009900",
-		title:"#at_title"
+	$("#btn_red").bind("click",function(){
+		mycolor.color("#ff0000");
+	});
+
+	$("#btn_show").bind("click",function(){
+		mycolor.show();
 	});
 })();
 </script>
