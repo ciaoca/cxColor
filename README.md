@@ -2,7 +2,7 @@
 
 cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的颜色值。
 
-版本：
+**版本：**
 
 * jQuery v1.4.4+
 * jQuery cxColor v1.1
@@ -55,22 +55,20 @@ cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的�
     </tr>
 </table>
 
-##使用方法
+##【使用方法】
 
-载入 CSS 文件
-
+###载入 CSS 文件
 ```html
 <link rel="stylesheet" href="css/jquery.cxcolor.css">
 ```
 
-载入 JavaScript 文件
-
+###载入 JavaScript 文件
 ```html
 <script src="js/jquery.js"></script> 
 <script src="js/jquery.cxcolor.js"></script>
 ```
 
-调用 cxColor
+###调用 cxColor
 ```javascript
 // 直接调用
 $("#element_id").cxColor();
