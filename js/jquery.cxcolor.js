@@ -143,7 +143,7 @@
 		theColorPanel.fn.change(settings.color);
 
 		reportColorPanel={
-			jqubj:theColorPanel.jqobj,
+			jqobj:theColorPanel.jqobj,
 			show:theColorPanel.fn.show,
 			hide:theColorPanel.fn.hide,
 			color:theColorPanel.fn.setColor,
