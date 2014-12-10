@@ -15,13 +15,13 @@ cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的�
 
 ###载入 CSS 文件
 ```html
-<link rel="stylesheet" href="css/jquery.cxcolor.css">
+<link rel="stylesheet" href="jquery.cxcolor.css">
 ```
 
 ###载入 JavaScript 文件
 ```html
-<script src="js/jquery.js"></script> 
-<script src="js/jquery.cxcolor.js"></script>
+<script src="jquery.js"></script> 
+<script src="jquery.cxcolor.js"></script>
 ```
 
 ###调用 cxColor
