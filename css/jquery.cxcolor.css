@@ -1,6 +1,6 @@
 /* 颜色输入框
 ------------------------------ */
-.input_cxcolor{width:18px;height:18px;padding:0;border:none;background:#000 url(../img/cxcolor.png) no-repeat;font-size:0;line-height:0;vertical-align:middle;cursor:pointer;}
+.input_cxcolor{width:18px;height:18px;padding:0;border:none;background:#000 url(jquery.cxcolor.png) no-repeat;font-size:0;line-height:0;vertical-align:middle;cursor:pointer;}
 
 /* 颜色选择器
 ------------------------------ */

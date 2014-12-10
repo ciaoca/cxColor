@@ -5,11 +5,35 @@ cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的�
 **版本：**
 
 * jQuery v1.4.4+
-* jQuery cxColor v1.1
+* jQuery cxColor v1.2
 
 文档：http://code.ciaoca.com/jquery/cxcolor/
 
 示例：http://code.ciaoca.com/jquery/cxcolor/demo/
+
+##【使用方法】
+
+###载入 CSS 文件
+```html
+<link rel="stylesheet" href="css/jquery.cxcolor.css">
+```
+
+###载入 JavaScript 文件
+```html
+<script src="js/jquery.js"></script> 
+<script src="js/jquery.cxcolor.js"></script>
+```
+
+###调用 cxColor
+```javascript
+// 直接调用
+$("#element_id").cxColor();
+
+// 自定义参数调用 
+$("#element_id").cxColor({
+    color:"#009900"
+});
+```
 
 ##【options 参数说明】
 
@@ -54,27 +78,3 @@ cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的�
        <td>清除颜色</td>
     </tr>
 </table>
-
-##【使用方法】
-
-###载入 CSS 文件
-```html
-<link rel="stylesheet" href="css/jquery.cxcolor.css">
-```
-
-###载入 JavaScript 文件
-```html
-<script src="js/jquery.js"></script> 
-<script src="js/jquery.cxcolor.js"></script>
-```
-
-###调用 cxColor
-```javascript
-// 直接调用
-$("#element_id").cxColor();
-
-// 自定义参数调用 
-$("#element_id").cxColor({
-    color:"#009900"
-});
-```
