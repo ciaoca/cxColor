@@ -7,9 +7,9 @@ cxColor 是基于 jQuery 的颜色选择器插件，输出值为 HEX 格式的�
 * jQuery v1.4.4+
 * jQuery cxColor v1.2
 
-文档：http://code.ciaoca.com/jquery/cxcolor/
+文档：http://code.ciaoca.com/jquery/cxColor/
 
-示例：http://code.ciaoca.com/jquery/cxcolor/demo/
+示例：http://code.ciaoca.com/jquery/cxColor/demo/
 
 ## 使用方法
 
